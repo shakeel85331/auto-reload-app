@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    kubernetes:
+      config:
+        enabled: true
+        sources:
+          - namespace: dev-environment
+            name: auto-reload-app
+        fail-fast: true
+        enableApi: true
+      reload:
+        enabled: true
+        mode: event
+        strategy: refresh
+
+management:
+  endpoint:
+    restart:
+      enabled: true

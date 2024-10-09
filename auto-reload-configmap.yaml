@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: auto-reload-app
+data:
+  application.properties: |
+    logging.level.com.shaan=TRACE
+    logginglevel.org.springframework=DEBUG
