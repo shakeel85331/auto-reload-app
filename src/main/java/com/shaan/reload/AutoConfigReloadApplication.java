@@ -10,4 +10,4 @@ public class AutoConfigReloadApplication {
     SpringApplication.run(AutoConfigReloadApplication.class, args);
   }
 
-}
+} 
